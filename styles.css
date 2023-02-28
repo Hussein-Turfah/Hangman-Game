@@ -1,3 +1,10 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  background-color: darkcyan;
+  height: 100vh;
+}
 #hangman {
   display: flex;
   align-items: center;

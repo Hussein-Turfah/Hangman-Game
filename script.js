@@ -5,11 +5,17 @@ const answer = document.getElementById('answer')
 
 let options = {
   words : ['Apple','Banana','Mango',"Lion",'Tiger','Elephant',]}
-console.log(options.fruits[0])
-console.log(options.animals[1])
+console.log(options.words)
 
-let word = options.words[Math.floor(Math.random() * options.words.length)].toLowerCase();
-let count = 0
-let incorrect_guesses = 0
-let chosen_word = ''
+const word = options.words[Math.floor(Math.random() * options.words.length)].toLowerCase();
 
+console.log(word)
+document.getElementById('test').innerHTML = word
+const splitWord = () => {
+  let letter = word.split('')
+  console.log(letter)
+}
+arrWord(options.words)
+
+
+// let incorrect_guesses = 0
