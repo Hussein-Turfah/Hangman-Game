@@ -45,6 +45,7 @@ function check(word) {
               this.getElementById('left-leg').style.display = 'block';
               document.removeEventListener('keydown', arguments.callee);
               this.getElementById('result').innerHTML = "Game Over!"
+              alert('Game Over!');
               break;
             case 2:
               this.getElementById('right-leg').style.display = 'block';
@@ -66,14 +67,7 @@ function check(word) {
           console.log(life)
         }
       }
-      // else{
-      //   document.removeEventListener('keydown', arguments.callee);
-      //   alert('Game Over!')
-      //   return
-      // }
-    
-
-    // update the output element on the screen
+    // update the output on screen
     output.textContent = displayString;
     //check for missing letters
     if (!displayString.includes('_')) {
