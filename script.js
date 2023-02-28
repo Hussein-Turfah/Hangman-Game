@@ -44,7 +44,7 @@ function check(word) {
             case 1:
               this.getElementById('left-leg').style.display = 'block';
               document.removeEventListener('keydown', arguments.callee);
-              output.innerHTML = "Game Over!"
+              this.getElementById('result').innerHTML = "Game Over!"
               break;
             case 2:
               this.getElementById('right-leg').style.display = 'block';
@@ -65,11 +65,12 @@ function check(word) {
           life -= 1
           console.log(life)
         }
-      }else{
-        document.removeEventListener('keydown', arguments.callee);
-        alert('Game Over!')
-        return
       }
+      // else{
+      //   document.removeEventListener('keydown', arguments.callee);
+      //   alert('Game Over!')
+      //   return
+      // }
     
 
     // update the output element on the screen
@@ -85,9 +86,3 @@ function check(word) {
 
 
 check(word)
-
-
-switch(hangman){
-  case 1:
-
-}
